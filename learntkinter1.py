@@ -47,9 +47,9 @@ def divz():
         yy = int(y.get())
         s = str(xx / yy)
     except ValueError:
-        s = "Введены должны быть только числа!"
+        s = "Value must be integers!"
     except ZeroDivisionError:
-        s = "Деление на 0!"
+        s = "Division by 0!"
     finally:
         l['text'] = s
         l.pack()
